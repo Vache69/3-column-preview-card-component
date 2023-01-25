@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.first-div{
+    background-color:  hsl(31, 77%, 52%);
+    max-width: 300px;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.second-div{
+    background-color: hsl(184, 100%, 22%);
+    max-width: 300px;
+    height: 500px;
+
+
+}
+
+.third-div{
+    background-color: hsl(179, 100%, 13%);
+    max-width: 300px;
+    height: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+img{
+    margin: 2rem;
+}
+
+h1{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display';
+    margin: 2rem;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    margin: 2rem;
+
+}
+
+span{
+    text-transform: uppercase;
+}
+
+button{
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-family: 'Lexend Deca';
+    margin: 2rem;
+}
+
+.btn-1{
+    color:  hsl(31, 77%, 52%);
+    border-color: #fff;
+
+}
+
+.btn-1:hover{
+    background-color:  hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border-color: #fff;
+}
+
+.btn-2{
+    color: hsl(184, 100%, 22%);
+    border-color: #fff;
+}
+
+.btn-2:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border-color: #fff;
+}
+
+.btn-3{    
+    color: hsl(179, 100%, 13%);
+    border-color: #fff;
+}
+
+.btn-3:hover{    
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border-color: #fff;
+
+}
+
+@media (max-width: 600px) {
+    body{
+        flex-direction: column;
+        margin: 3rem;
+        width: 400px;
+    }    
+
+    .first-div{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .third-div{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
